@@ -248,16 +248,47 @@ main .progamer .progamer__titulo {
 main .progamer .progamer__titulo__text {
     text-transform: uppercase;
     font-family: TitilliumWeb-Black;
-    font-size: 18px;
+    font-size: 1.12rem;
     font-weight: 900;
     color: #1B1426;
     letter-spacing: 0.17em;
     text-align: center;
+    margin-top: 5.25rem;
+    margin-bottom: 2rem;
 }
 
 main .progamer .progamer__titulo__linha {
-    border: #1B1426 solid 1px;
-    width: 30%;
+    border: #1B1426 solid 2px;
+    width: 231px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main .progamer .progamer__box-info-killjoy {
+    width: 246px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+}
+
+main .progamer .progamer__box-info-killjoy .progamer__box-info-killjoy__titulo {
+    font-family: TitilliumWeb-Black;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: 0 0 6px #C6A5E5;
+}
+
+main .progamer .progamer__box-info-killjoy .progamer__box-info-killjoy__text {
+    width: 12rem;
+
+    font-family: Quicksand;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: justify;
 }
 
 
