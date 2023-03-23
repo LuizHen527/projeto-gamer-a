@@ -66,6 +66,17 @@ body {
     align-items: center;
 }
 
+.border-gradient {
+    border: 2px solid transparent; /* borda transparente */
+    border-radius: 8px; /* raio da borda */
+    border-image-slice: 1;
+    background-image: linear-gradient(to right bottom, #FFFFFF, rgba(27, 20, 38, 0)); /* gradiente da borda */
+    padding: 10px; /* espaço interno */
+    width: 246px;
+    height: 300px;
+  }
+  
+
 /* Mobile First */
 
 /* HEADER */
@@ -264,6 +275,17 @@ main .progamer .progamer__titulo__linha {
     margin-right: auto;
 }
 
+/* Parte killjoy */
+
+main .progamer .progamer__killjoy {
+    display: flex;
+    margin-top: 82px;
+}
+
+main .progamer .progamer__killjoy .progamer__killjoy__image {
+    margin-left: 20px;
+}
+
 main .progamer .progamer__box-info-killjoy {
     width: 246px;
     height: 300px;
@@ -272,6 +294,21 @@ main .progamer .progamer__box-info-killjoy {
     align-items: center;
     justify-content: center;
     gap: 23px;
+    z-index: 3;
+
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background:
+        /* fundo */
+        linear-gradient(to right bottom, rgba(110, 49, 236, .2), rgba(45, 7, 109, .83)) padding-box,
+        /* fundo borda */
+        linear-gradient(90deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, .1)) border-box;
+    backdrop-filter: blur(4px);
+
+    position: absolute;
+    left: 125px;
+    margin-top: 132px;
+    
 }
 
 main .progamer .progamer__box-info-killjoy .progamer__box-info-killjoy__titulo {
@@ -291,7 +328,124 @@ main .progamer .progamer__box-info-killjoy .progamer__box-info-killjoy__text {
     text-align: justify;
 }
 
+/* Parte LoL */
 
+main .progamer .progamer__lol {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 130px;
+}
+
+main .progamer .progamer__lol .progamer__lol__image {
+    margin-right: 20px;
+}
+
+main .progamer .progamer__lol__info-box {
+    width: 246px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background:
+        /* fundo */
+        linear-gradient(to right bottom, rgba(110, 49, 236, .2), rgba(45, 7, 109, .83)) padding-box,
+        /* fundo borda */
+        linear-gradient(90deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, .1)) border-box;
+    backdrop-filter: blur(4px);
+
+    position: absolute;
+    right: 124px;
+    margin-top: 111px;
+}
+
+main .progamer .progamer__lol__info-box .progamer__lol__info-box__titulo {
+    font-family: TitilliumWeb-Black;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: 0 0 6px #C6A5E5;
+    margin-bottom: 11px;
+}
+
+main .progamer .progamer__lol__info-box .progamer__lol__info-box__text1 {
+    font-family: Quicksand;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: justify;
+
+    width: 10.8rem;
+}
+
+main .progamer .progamer__lol__info-box .progamer__lol__info-box__text2 {
+    font-family: Quicksand;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: justify;
+
+    width: 10.8rem;
+}
+
+
+
+/* Sessao noticias */
+
+main .noticia {
+    height: 3675px;
+    background-image: url(../assets/images/noticia-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+main .noticia .noticia__titulo {
+    text-transform: uppercase;
+    font-family: TitilliumWeb-Black;
+    font-size: 1.12rem;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 2.875rem;
+}
+
+main .noticia .noticia__titulo .noticia__titulo__text {
+    margin-bottom: 1.5rem;
+}
+
+main .noticia .noticia__titulo .noticia__titulo__linha {
+    border: #F9AA01 solid 1px;
+    width: 204px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main .noticia .noticia__conjunto-cards__card-box {
+    width: 335px;
+    height: 387px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 8px;
+    background: linear-gradient(to right bottom, rgba(37, 26, 52, .3), rgba(5, 1, 12, .8)) padding-box;
+}
+
+main .noticia .noticia__conjunto-cards__card-box .noticia__conjunto-cards__card-box__titulo {
+    font-family: TitilliumWeb-Bold;
+    font-size: 24px;
+    width: 175px;
+    margin-left: 25px;
+}
+
+main .noticia .noticia__conjunto-cards__card-box .noticia__conjunto-cards__card-box__text {
+    font-family: Quicksand;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: justify;
+    width: 283px;
+    margin-left: 25px;
+}
 
 /* Footer */
 footer {
