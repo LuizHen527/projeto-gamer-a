@@ -75,6 +75,12 @@ body {
     width: 246px;
     height: 300px;
   }
+
+  .blur {
+    background: linear-gradient(to right bottom, rgba(45, 24, 77, 0), rgba(27, 20, 38, 1));
+    backdrop-filter: blur(4px);
+    height: 100%;
+  }
   
 
 /* Mobile First */
@@ -287,7 +293,7 @@ main .progamer .progamer__killjoy {
 }
 
 main .progamer .progamer__killjoy .progamer__killjoy__image {
-    margin-left: 20px;
+    
 }
 
 main .progamer .progamer__box-info-killjoy {
@@ -781,6 +787,7 @@ footer .footer-bottom #rights {
 
     main .progamer .progamer__killjoy {
         margin-top: 0;
+        position: relative;
     }
 
     main .progamer .progamer__titulo__text {
@@ -792,7 +799,7 @@ footer .footer-bottom #rights {
         height: 440px;
 
         margin-top: 193px;
-        left: 266px;
+        left: 244px;
 
     }
 
@@ -812,13 +819,18 @@ footer .footer-bottom #rights {
 
     main .progamer .progamer__lol {
         margin-top: 0;
+        position: relative;
+    }
+
+    main .progamer .progamer__lol .progamer__lol__image {
+        margin-right: 0;
     }
 
     main .progamer .progamer__lol__info-box {
         width: 360px;
         height: 440px;
 
-        right: 400px;
+        right: 221px;
         margin-top: 193px;
     }
 
@@ -830,6 +842,42 @@ footer .footer-bottom #rights {
     main .progamer .progamer__lol__info-box .progamer__lol__info-box__text2 {
         font-size: 16px;
         width: 15.5rem;
+    }
+
+
+
+    /* Sessão Notícias */
+
+
+
+    main .noticia {
+        height: 1175px;
+        background-image: url(../assets/images/desktop-noticia-background.png);
+    }
+
+    main .noticia .noticia__titulo {
+        font-size: 2.5rem;
+        padding-top: 5.6rem;
+    }
+
+    main .noticia .noticia__titulo .noticia__titulo__text {
+        margin-bottom: 3.1rem;
+    }
+
+    main .noticia .noticia__conjunto-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        height: 836px;
+        margin-top: 60px;
+    }
+
+    main .noticia .noticia__conjunto-cards__card-box {
+        width: 285px;
+    }
+
+    main .noticia .noticia__conjunto-cards__card-box .noticia__conjunto-cards__card-box__text {
+        width: 241px;
     }
 
 }
