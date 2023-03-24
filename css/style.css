@@ -790,6 +790,10 @@ footer .footer-bottom #rights {
     main .progamer .progamer__box-info-killjoy {
         width: 360px;
         height: 440px;
+
+        margin-top: 193px;
+        left: 1px;
+        
     }
 
     main .progamer .progamer__box-info-killjoy .progamer__box-info-killjoy__titulo {
@@ -814,8 +818,8 @@ footer .footer-bottom #rights {
         width: 360px;
         height: 440px;
 
-        right: 124px;
-        bottom: ;
+        right: 243px;
+        margin-top: 193px;
     }
 
     main .progamer .progamer__lol__info-box .progamer__lol__info-box__titulo {
