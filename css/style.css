@@ -421,6 +421,13 @@ main .noticia .noticia__titulo .noticia__titulo__linha {
     margin-right: auto;
 }
 
+main .noticia .noticia__conjunto-cards {
+    margin-top: 118px;
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+}
+
 main .noticia .noticia__conjunto-cards__card-box {
     width: 335px;
     height: 387px;
